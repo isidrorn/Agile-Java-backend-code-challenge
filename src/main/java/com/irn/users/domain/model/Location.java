@@ -2,6 +2,7 @@ package com.irn.users.domain.model;
 
 import lombok.Data;
 
+@Deprecated
 @Data
 public class Location {
 
