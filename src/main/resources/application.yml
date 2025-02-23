@@ -16,10 +16,25 @@ spring:
     console:
       enabled: true
       path: /h2-ui
-      settings.web-allow-others: false
+#      settings.web-allow-others: false
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: basic
 
 feign:
   client:
     randomuser:
       base-url: "https://randomuser.me/api/"
 
+springdoc:
+  swagger-ui:
+    enabled: true
+
+logging:
+  level:
+    com.irn.users: DEBUG
