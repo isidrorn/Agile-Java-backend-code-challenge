@@ -24,6 +24,6 @@ public class UserResponseDto {
     @Schema(name = "picture", description = "URL to user's profile picture", example = "https://img.io/asdf87as", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private String picture;
     @Schema(name = "location", description = "location", requiredMode = Schema.RequiredMode.REQUIRED)
-    private LocationResponseDto location;
+    private LocationDto location;
 
 }

@@ -1,0 +1,20 @@
+
+H2 In-memory DB
+
+    URL to web admin console:
+        http://localhost:8080/h2-console
+        user=admin
+        pass=admin
+
+Data load script:
+    src/main/resources/data.sql
+
+
+Swagger-ui:
+    http://localhost:8080/swagger-ui.html
+
+Run project:
+    mvn spring-boot:run
+
+Test project:
+    mvn compile verify

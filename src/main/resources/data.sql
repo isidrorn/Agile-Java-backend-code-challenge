@@ -1,1 +1,1 @@
-insert into "USERS" (id, username, name, gender, email, picture, city, state, country) values (1, 'Lion', 'Lion El''Jonson ', 'Male', 'thelion@iom.org', 'https://img.io/asdf87as', 'Riga', 'Riga', 'Latvia')
+insert into "USERS" (id, username, name, gender, email, picture, city, state, country) values (999999, 'Lion', 'Lion El''Jonson ', 'Male', 'thelion@iom.org', 'https://img.io/asdf87as', 'Riga', 'Riga', 'Latvia')

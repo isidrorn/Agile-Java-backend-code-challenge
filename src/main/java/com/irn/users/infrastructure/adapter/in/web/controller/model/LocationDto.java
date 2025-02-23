@@ -4,7 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-public class LocationResponseDto {
+public class LocationDto {
 
     @Schema(name = "city", description = "city", example = "Boston", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private String city;
