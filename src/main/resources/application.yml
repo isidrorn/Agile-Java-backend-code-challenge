@@ -10,7 +10,6 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    #TODO remove this on final version (data.sql too), unless want to load some sample data by default
     defer-datasource-initialization: true
   h2:
     console:

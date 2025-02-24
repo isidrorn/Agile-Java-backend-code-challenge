@@ -18,8 +18,6 @@ public interface UserEntityMapper {
 
     List<UserEntity> toEntityList(List<User> userList);
 
-//    Page<User> toDomainPage(Page<UserEntity> userList);
-
     default Page<User> toDomainPage(Page<UserEntity> data) {
         return data.map(this::toDomain);
     }

@@ -2,7 +2,7 @@ package com.irn.users.infrastructure.adapter.in.web.controller;
 
 import com.irn.users.application.port.in.CreateUserUseCase;
 import com.irn.users.infrastructure.adapter.in.web.controller.mapper.UserMapper;
-import com.irn.users.infrastructure.adapter.in.web.controller.model.UserRequestDto;
+import com.irn.users.infrastructure.adapter.in.web.controller.model.CreateUserRequestDto;
 import com.irn.users.infrastructure.adapter.in.web.controller.model.UserResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -30,9 +30,8 @@ public class CreateUserController {
                     content = @Content),
             @ApiResponse(responseCode = "400", description = "Missing required data",
                     content = @Content) })
-    //TODO OpenApi doc
     @PostMapping("/users/")
-    public UserResponseDto getUser(@RequestBody UserRequestDto user){
+    public UserResponseDto getUser(@RequestBody CreateUserRequestDto user){
         return userMapper.toDto(createUserUseCase.createUser(userMapper.toDomain(user)));
     }
 

@@ -6,10 +6,10 @@ import lombok.Data;
 @Data
 public class LocationDto {
 
-    @Schema(name = "city", description = "city", example = "Boston", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @Schema(name = "city", description = "city", example = "Boston", requiredMode = Schema.RequiredMode.REQUIRED)
     private String city;
-    @Schema(name = "state", description = "state", example = "Massachusetts", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @Schema(name = "state", description = "state", example = "Massachusetts", requiredMode = Schema.RequiredMode.REQUIRED)
     private String state;
-    @Schema(name = "country", description = "country", example = "United States", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @Schema(name = "country", description = "country", example = "United States", requiredMode = Schema.RequiredMode.REQUIRED)
     private String country;
 }

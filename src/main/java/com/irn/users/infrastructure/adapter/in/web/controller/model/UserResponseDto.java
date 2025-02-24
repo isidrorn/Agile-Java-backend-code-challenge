@@ -13,12 +13,8 @@ public class UserResponseDto {
     private String username;
     @Schema(name = "name", description = "full user's name", example = "someUserName", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private String name;
-    //TODO validation
-    //@Valid
-    //@Constraint()
     @Schema(name = "email", description = "e-mail address", example = "example@mail.org", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private String email;
-    //TODO use enum
     @Schema(name = "gender", description = "user's gender", example = "male/female", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private String gender;
     @Schema(name = "picture", description = "URL to user's profile picture", example = "https://img.io/asdf87as", requiredMode = Schema.RequiredMode.NOT_REQUIRED)

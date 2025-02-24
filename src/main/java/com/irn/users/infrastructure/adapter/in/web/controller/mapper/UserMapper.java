@@ -1,8 +1,8 @@
 package com.irn.users.infrastructure.adapter.in.web.controller.mapper;
 
 import com.irn.users.domain.model.User;
+import com.irn.users.infrastructure.adapter.in.web.controller.model.CreateUserRequestDto;
 import com.irn.users.infrastructure.adapter.in.web.controller.model.UpdateUserRequestDto;
-import com.irn.users.infrastructure.adapter.in.web.controller.model.UserRequestDto;
 import com.irn.users.infrastructure.adapter.in.web.controller.model.UserResponseDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -18,7 +18,7 @@ public interface UserMapper {
     @Mapping(target = "city" ,source = "location.city")
     @Mapping(target = "state" ,source = "location.state")
     @Mapping(target = "country" ,source = "location.country")
-    User toDomain(UserRequestDto user);
+    User toDomain(CreateUserRequestDto user);
 
     @Mapping(target = "city" ,source = "user.location.city")
     @Mapping(target = "state" ,source = "user.location.state")
