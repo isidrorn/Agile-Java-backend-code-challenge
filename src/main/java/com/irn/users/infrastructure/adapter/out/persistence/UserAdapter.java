@@ -44,7 +44,7 @@ public class UserAdapter implements
     public User createUser(User user) {
         Optional<UserEntity> userEntity = userRepository.findByUsername(user.getUsername());
         if (userEntity.isPresent()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User: " + user.getUsername() + " already exists");
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "User: " + user.getUsername() + " already exists");
         }
 
         return mapper.toDomain(
