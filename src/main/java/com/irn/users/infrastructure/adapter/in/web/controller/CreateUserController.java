@@ -31,7 +31,7 @@ public class CreateUserController {
             @ApiResponse(responseCode = "400", description = "Missing required data",
                     content = @Content) })
     @PostMapping("/users/")
-    public UserResponseDto getUser(@RequestBody CreateUserRequestDto user){
+    public UserResponseDto createUser(@RequestBody CreateUserRequestDto user){
         return userMapper.toDto(createUserUseCase.createUser(userMapper.toDomain(user)));
     }
 
